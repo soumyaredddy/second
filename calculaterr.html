@@ -1,0 +1,56 @@
+html>
+	<head>
+		<style>
+			.inp2{
+			width:30px;height:30px;margin-top:5px;
+			}
+			.inp2:hover{
+			background:#D96C00;color:white;
+			}
+			.inp{
+			width:133px;height:30px;
+			}
+		</style>
+		<script>
+		function disp(btn)
+		{
+			if(btn!='=')
+			{
+			document.getElementById("val").value=document.getElementById("val").value+btn;
+
+			}
+			else{
+			document.getElementById("val").value=eval(document.getElementById("val").value);
+			}
+		}
+		function clr()
+		{
+			document.getElementById("val").value='';
+		}
+
+		</script>
+	</head>
+	<body>
+
+		<input type="text" id="val" class="inp">
+		<br>
+		<input type="submit" value="1" onclick="disp(1)" class="inp2">
+		<input type="submit" value="2" onclick="disp(2)" class="inp2">
+		<input type="submit" value="3" onclick="disp(3)" class="inp2">
+		<input type="submit" value="+" onclick="disp('+')" class="inp2"><br>
+		<input type="submit" value="4" onclick="disp(4)" class="inp2">
+		<input type="submit" value="5" onclick="disp(5)" class="inp2">
+		<input type="submit" value="6" onclick="disp(6)" class="inp2">
+		<input type="submit" value="-" onclick="disp('-')" class="inp2"><br>
+		<input type="submit" value="7" onclick="disp(7)" class="inp2">
+		<input type="submit" value="8" onclick="disp(8)" class="inp2">
+		<input type="submit" value="9" onclick="disp(9)" class="inp2">
+		<input type="submit" value="/" onclick="disp('/')" class="inp2"><br>
+		<input type="submit" value="0" onclick="disp(0)" class="inp2">
+		<input type="submit" value="c" onclick="clr()" class="inp2">
+		<input type="submit" value="=" onclick="disp('=')" class="inp2">
+		<input type="submit" value="*" onclick="disp('*')" class="inp2"><br>
+
+
+	</body>
+</html>

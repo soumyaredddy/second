@@ -1,0 +1,30 @@
+
+<html>
+ <head>
+<title> calculater</title>
+<script>
+
+function cal()
+{
+  var x=document.getElementById("num1").value;
+  var y=document.getElementById("num2").value;
+
+  document.getElementById("demo").innerHTML=x*y;
+
+}
+</script>
+</head>
+<body>
+
+
+    <input type="number" id="num1">
+    <input type= "number" id="num2">
+    <p id="demo"></p>
+
+    <button  type= "submit" onclick="cal()">
+      SUBMIT</button>
+  </form>
+
+
+</body>
+</html>
